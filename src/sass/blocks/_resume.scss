@@ -1,0 +1,135 @@
+.resume {
+    padding-top: 120px;
+    background: url(../../img/section_bg2.jpg) 0 0 no-repeat;
+    position: relative;
+    z-index: -5;
+&__title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px; 
+    text-align: center;
+    position: relative;
+    color: #000000;
+    @include efore_circle;
+    &:before{
+        left:534px;
+        top:-7px;
+    }
+}
+&__subtitle {
+    font-family: Poppins;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 36px;
+    color: #000000;
+}
+.laine{
+    width: 70px;
+    height: 0px;
+    background-color: #FFA501;
+    border: 2px solid #FFA501;
+    margin: 10px auto;
+    } 
+&__grid-container {
+    padding: 60px 60px 0 67px;
+    display: grid;
+    grid-template-columns: 425px 425px;
+    column-gap: 154px;
+
+}
+
+}
+
+.column-grid {
+    position: relative;
+    .line1 {
+        position: absolute;
+        left:-240px;
+        top:75px;
+        width: 343px;
+        height: 0px;
+        border: 1px solid #000000;
+        transform: rotate(90deg);
+    }
+    .line2 {
+        position: absolute;
+        position: absolute;
+        width: 47.97px;
+        height: 0px;
+        border: 1px solid #000000;
+        left: -66px;
+        transform: rotate(180deg);
+    }
+    .sircle3 {
+        position: absolute;
+        width: 47.97px;
+        height: 0px;
+        border: 1px solid #000000;
+        transform: rotate(180deg);
+    }  
+    .ltlcircle{
+        width: 17px;
+        height: 17px;
+        background: $main-color;
+        position: absolute;
+        border-radius: 50%;
+        z-index: -2;
+        border:1px solid #fff;
+       top:-112px;
+       left:-76px;
+    }
+        
+    
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        color: #000000;
+        }
+    &__subtitle-block {
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        margin-right: 22px;
+        position:relative;
+        @include efore_circle;
+        &:before{
+            left:-17px;
+            top:-17px;
+        }
+  
+    }
+ 
+    &__subtitle-wraper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__subtitle {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: #000000;
+    }
+    &__subtitle-descr {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color: #000000;
+    }
+    &__text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color: #000000;
+        
+    }
+}

@@ -1,0 +1,122 @@
+.portfolio{
+    padding-top: 120px;
+    
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        position: relative;
+        color: #000000;
+        @include efore_circle;
+        &:before{
+            left:517px;
+            top:-7px;
+        }
+    }
+    &__subtitle {
+        font-family: Poppins;
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        margin-top: 20px;
+        font-size: 36px;
+        color: #000000;
+    
+    }
+    .laine{
+        width: 70px;
+        height: 0px;
+        background-color: #FFA501;
+        border: 2px solid #FFA501;
+        margin: 10px auto;
+        } 
+    &__grid-container {
+        margin-top: 65px;
+        display: grid;
+        grid-template: repeat(2, 280px) / repeat(4, 280px)  ;
+        grid-auto-rows: 280px;
+        gap: 5px;
+    }
+    &__item-link {
+    
+
+    }
+    &__item-img {
+        width: 100%;
+        transition: all 0.7s;
+        &:hover{
+            filter: grayscale(90%);
+        }
+    }
+    &__horizontal{
+        grid-row: 2 / 3;
+        grid-column: 2 / 4 ;
+    }
+    &__vertical{
+        grid-row: 1 / 3;
+        grid-column: 4 / 5;
+    }
+
+
+    
+   
+}
+.carousel-3d {
+    display: none;
+    padding: 20px;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.carousel-3d > * {
+    flex: 0 0 auto;
+}
+.carousel-3d figure {
+    margin: 0;
+    width: 50%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.carousel-3d figure img,
+.carousel-3d figure div {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+}
+.carousel-3d figure div:not(:first-of-type),
+.carousel-3d figure img:not(:first-of-type) {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.carousel-3d nav {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0;
+}
+.carousel-3d nav button {
+  
+    flex: 0 0 auto;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #FFA501;
+    background: #facd78;
+    border: 1px solid #FFA501;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+.carousel-3d nav button:hover {
+    color: #FFF;
+    background: #FFA501;
+}
+

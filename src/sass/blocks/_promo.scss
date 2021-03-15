@@ -1,0 +1,47 @@
+.promo{
+    min-height: 100vh;
+    position: relative;
+    background: url(../img/main_bg2.jpg) no-repeat 50%/cover  ;
+    padding-top:400px ;
+    &__suptitle{
+        display:inline-block ;
+        text-align: center;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        color: #fff;
+        position: relative;
+        z-index: 2;
+        text-shadow: 1px 1px 0px rgb(5, 5, 5), 1px 1px 0px #fff;
+        @include efore_circle;
+        &:before{
+            left:-9px;
+            top:-4px;
+        }
+        
+
+    }
+    &__title {
+        text-align: center;
+        margin-top: 20px;
+        width: 539px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        color: #241f1f;
+        border:2px solid #fff;
+        background-color: #d4d4d2;
+        border-radius: 20px;
+    }
+    &__btns{
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px ;
+
+    }
+  
+}
+

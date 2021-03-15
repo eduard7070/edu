@@ -1,0 +1,87 @@
+.price {
+    background-color:#f7f7f7;
+    padding-top: 120px;
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        position: relative;
+        color: #000000;
+        @include efore_circle;
+        &:before{
+            left:517px;
+            top:-7px;
+        }
+    }
+    .laine {
+        width: 70px;
+        height: 0px;
+        background-color: #FFA501;
+        border: 2px solid #FFA501;
+        margin: 20px auto;
+    }
+    &__grid-container {
+        padding: 60px 50px 60px 50px;
+        grid-template-columns: 370px 370px;
+        grid-template-rows:minmax(45px, auto) minmax(45px, auto) minmax(45px, auto);
+        grid-auto-rows: minmax(45px, auto);
+        row-gap:15px;
+        justify-content: space-between;
+        display: grid;
+    }
+    &__column {
+        padding-left: 26px;
+    }
+}
+
+.column-price {
+   
+    &__grid-container {
+        display: grid;
+        grid-template-columns: 50%  50%;
+        justify-content: space-between;
+      
+        grid-template-rows: 22px  minmax(22px, auto) ;
+    }
+
+    &__title {
+        position: relative;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        justify-self: start;
+        &:before{
+            content:'';
+            width: 18px;
+            height: 18px;
+            background: $main-color;
+            position: absolute;
+            border-radius: 50%;
+            z-index: -2;
+            border:1px solid #fff;
+            left:-26px;
+           
+            }
+    }
+
+    &__price {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        justify-self: end;
+    }
+    &__descr {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        grid-row: 2 / 3;
+        grid-column: 1 / 3 ;
+
+    }
+}
